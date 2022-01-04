@@ -16,21 +16,20 @@
     <build>
 
         <plugins>
-            <plugin>
+            <!--o<plugin>
                 <groupId>com.heroku.sdk</groupId>
                 <artifactId>heroku-maven-plugin</artifactId>
                 <version>3.0.3</version>
             </plugin>
-
+            or <release>10</release>-->
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.5.1</version>
+                <groupId>com.heroku.sdk</groupId>
+                <artifactId>heroku-maven-plugin</artifactId>
+                <version>2.0.8</version>
                 <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
 
-                        <release>11</release>  <!--or <release>10</release>-->
+
+
                     <appName>olx-poisk-bot</appName>
                     <processTypes>
                         <worker>
