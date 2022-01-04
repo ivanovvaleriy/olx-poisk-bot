@@ -34,7 +34,7 @@
                     <appName>olx-poisk-bot</appName>
                     <processTypes>
                         <worker>
-                            java $JAVA_OPTS -cp target/classes:target/dependency/MainBot.java
+                            java $JAVA_OPTS -cp target/classes:target/dependency/src/main/java/MainBot.java
                         </worker>
                     </processTypes>
                 </configuration>
