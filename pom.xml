@@ -31,7 +31,12 @@
                     <target>1.8</target>
 
                         <release>11</release>  <!--or <release>10</release>-->
-
+                    <appName>olx-poisk-bot</appName>
+                    <processTypes>
+                        <worker>
+                            java $JAVA_OPTS -cp target/classes:target/dependency/MainBot.java
+                        </worker>
+                    </processTypes>
                 </configuration>
             </plugin>
         </plugins>
