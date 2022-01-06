@@ -1,1 +1,1 @@
-worker: sh target/bin/BotTelegram
+worker: sh target/bin/olx-poisk-bot
