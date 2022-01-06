@@ -34,7 +34,7 @@
                     <assembleDirectory>target</assembleDirectory>
                     <programs>
                         <program>
-                            <mainClass>com.company.MainBot</mainClass>
+                            <mainClass>com.home.server.MainBot</mainClass>
                             <name>olx-poisk-bot</name>
                         </program>
                     </programs>
