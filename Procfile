@@ -1,1 +1,1 @@
-worker: sh target/olx-poisk-bot
+worker: sh target/bin/olx-poisk-bot
