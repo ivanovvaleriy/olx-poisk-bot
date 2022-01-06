@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>olx-poisk-bot</groupId>
+  <artifactId>olx-poisk-bot</artifactId>
+  <versioning>
+    <versions>
+      <version>1.0-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20220106230623</lastUpdated>
+  </versioning>
+</metadata>
