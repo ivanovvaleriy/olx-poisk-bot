@@ -1,7 +1,10 @@
 package utils;
 
+
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 import java.util.ArrayList;
 
@@ -9,9 +12,23 @@ import java.util.ArrayList;
 public class BrowserManager {
     public static WebDriver browser;
 
+
     public static void openBrowser() {
-        System.setProperty("webdriver.chrome.driver", "L:/Projects/chromedriver.exe");
-        browser = new ChromeDriver();
+        //System.setProperty("GOOGLE_CHROME_BIN", "/app/.apt/usr/bin/google-chrome");
+       // System.setProperty("CHROMEDRIVER_PATH", "/app/.chromedriver/bin/chromedriver");
+        ChromeOptions options = new ChromeOptions();
+       // options.setBinary("/app/.apt/usr/bin/google-chrome");
+        options.setBinary("/path/to/chromedriver");
+        options.addArguments("--enable-javascript");
+        options.addArguments("--headless");
+        options.addArguments("--disable-gpu");
+        options.addArguments("--no-sandbox");
+        WebDriver browser = new ChromeDriver(options);
+        browser = new ChromeDriver(options);
+
+        //chrome_options.binary_location = os.environ.get('GOOGLE_CHROME_SHIM', None)
+        //browser = webdriver.Chrome(executable_path="chromedriver", chrome_options=chrome_options)
+
 
     }
 
