@@ -1,5 +1,6 @@
 package utils;
-
+from selenium import webdriver
+import os
 
 
 import org.openqa.selenium.WebDriver;
@@ -13,21 +14,14 @@ public class BrowserManager {
     public static WebDriver browser;
 
 
-    public static void openBrowser() {
-        //System.setProperty("GOOGLE_CHROME_BIN", "/app/.apt/usr/bin/google-chrome");
-       // System.setProperty("CHROMEDRIVER_PATH", "/app/.chromedriver/bin/chromedriver");
-        ChromeOptions options = new ChromeOptions();
-       // options.setBinary("/app/.apt/usr/bin/google-chrome");
-        options.setBinary("/path/to/chromedriver");
-        options.addArguments("--enable-javascript");
-        options.addArguments("--headless");
-        options.addArguments("--disable-gpu");
-        options.addArguments("--no-sandbox");
-        WebDriver browser = new ChromeDriver(options);
-        browser = new ChromeDriver(options);
 
-        //chrome_options.binary_location = os.environ.get('GOOGLE_CHROME_SHIM', None)
-        //browser = webdriver.Chrome(executable_path="chromedriver", chrome_options=chrome_options)
+    public static void openBrowser() {
+        chrome_options = webdriver.ChromeOptions()
+        chrome_options.binary_location = os.environ.get("GOOGLE_CHROME_BIN")
+        chrome_options.add_argument("--headless")
+        chrome_options.add_argument("--disable-dev-shm-usage")
+        chrome_options.add_argument("--no-sandbox")
+        driver = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"), chrome_options=chrome_options)
 
 
     }
