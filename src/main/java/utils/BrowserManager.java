@@ -26,10 +26,11 @@ public class BrowserManager {
         options.addArguments("--headless");
         options.addArguments("--disable-gpu");
         options.addArguments("--no-sandbox");
-         //browser = new ChromeDriver(options);
-      //   WebDriver browser = new ChromeDriver(options);
-         ChromeDriver browser = new ChromeDriver(options);
+         browser = new ChromeDriver(options);
         browser.manage().window().maximize();
+      //   WebDriver browser = new ChromeDriver(options);
+        // ChromeDriver browser = new ChromeDriver(options);
+       // browser.manage().window().maximize();
     }
 
     public static void closeBrowser() {
