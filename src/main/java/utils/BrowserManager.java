@@ -17,10 +17,11 @@ public class BrowserManager {
     public static void openBrowser() {
 
         System.setProperty("webdriver.chrome.driver","/chromedriver");
-        WebDriver browser= new ChromeDriver();
+
 
         ChromeOptions options=new ChromeOptions();
         options.setBinary("/app/.apt/opt/google/chrome/chrome");
+        browser = new ChromeDriver(options);
 
     }
 
