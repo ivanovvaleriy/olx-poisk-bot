@@ -29,7 +29,7 @@ public class BrowserManager {
          //browser = new ChromeDriver(options);
       //   WebDriver browser = new ChromeDriver(options);
          ChromeDriver browser = new ChromeDriver(options);
-
+        browser.manage().window().maximize();
     }
 
     public static void closeBrowser() {
