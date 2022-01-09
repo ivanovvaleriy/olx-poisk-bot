@@ -26,8 +26,8 @@ public class BrowserManager {
         options.addArguments("--headless");
         options.addArguments("--disable-gpu");
         options.addArguments("--no-sandbox");
-         browser = new ChromeDriver(options);
-         //WebDriver browser = new ChromeDriver(options);
+         //browser = new ChromeDriver(options);
+         WebDriver browser = new ChromeDriver(options);
 
     }
 
