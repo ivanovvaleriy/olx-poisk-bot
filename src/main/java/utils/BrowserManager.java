@@ -17,10 +17,10 @@ public class BrowserManager {
     public static void openBrowser() {
 
 
-        System.setProperty("GOOGLE_CHROME_BIN", "/app/.apt/usr/bin/google-chrome");
-        System.setProperty("CHROMEDRIVER_PATH", "/app/.chromedriver/bin/chromedriver");
 
         ChromeOptions options = new ChromeOptions();
+        System.setProperty("GOOGLE_CHROME_BIN", "/app/.apt/usr/bin/google-chrome");
+        System.setProperty("CHROMEDRIVER_PATH", "/app/.chromedriver/bin/chromedriver");
         options.setBinary("/app/.apt/usr/bin/google-chrome");
         options.addArguments("--enable-javascript");
         options.addArguments("--headless");
