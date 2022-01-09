@@ -16,12 +16,18 @@ public class BrowserManager {
 
     public static void openBrowser() {
 
-        System.setProperty("webdriver.chrome.driver","/chromedriver");
 
+        System.setProperty("GOOGLE_CHROME_BIN", "/app/.apt/usr/bin/google-chrome");
+        System.setProperty("CHROMEDRIVER_PATH", "/app/.chromedriver/bin/chromedriver");
 
-        ChromeOptions options=new ChromeOptions();
-        options.setBinary("/app/.apt/opt/google/chrome/chrome");
-        browser = new ChromeDriver(options);
+        ChromeOptions options = new ChromeOptions();
+        options.setBinary("/app/.apt/usr/bin/google-chrome");
+        options.addArguments("--enable-javascript");
+        options.addArguments("--headless");
+        options.addArguments("--disable-gpu");
+        options.addArguments("--no-sandbox");
+         browser = new ChromeDriver(options);
+         //WebDriver browser = new ChromeDriver(options);
 
     }
 
