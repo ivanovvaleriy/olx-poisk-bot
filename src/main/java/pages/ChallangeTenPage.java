@@ -28,7 +28,7 @@ public class ChallangeTenPage {
     @FindBy(name = "lastname")
     public WebElement lastnameField;
 
-    @FindBy(xpath = "//h3/a[contains(@class,'detailsLink')]")
+    @FindBy(xpath = "//a[contains(@class,'css-1bbgabe')]")
     static
     //div/p[contains(@class,'price')]
     //h3/a[contains(@class,'detailsLink')]
