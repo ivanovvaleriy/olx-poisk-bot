@@ -25,7 +25,7 @@ public class BrowserManager {
         options.addArguments("--enable-javascript");
         options.addArguments("--headless");
         options.addArguments("--disable-gpu");
-
+        options.addArguments("--no-sandbox");
         options.addArguments("--window-size=1420,1080'");
         options.addArguments("--disable-notifications");
         options.addArguments("--remote-debugging-port=9222");
