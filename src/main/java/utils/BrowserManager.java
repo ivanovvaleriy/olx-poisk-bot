@@ -29,6 +29,8 @@ public class BrowserManager {
         options.addArguments("--window-size=1420,1080'");
         options.addArguments("--disable-notifications");
         options.addArguments("--remote-debugging-port=9222");
+        options.addArguments("--disable-dev-shm-usage");
+
 
 
 
